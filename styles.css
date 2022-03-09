@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.map {
+    position: relative;
+    width: 400px; /* if you divide this number with the snake width the result has to be an even number */
+    height: 280px; /* if you divide this number with the snake height the result has to be an even number */
+    border: 0.4rem solid #39393a;
+    background-color: white;
+}
+
+.record {
+    position: absolute;
+    top: -1.4rem;
+    left: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.points {
+    position: absolute;
+    top: -1.4rem;
+    right: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.snake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 35%;
+}
+
+.food-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.food {
+    width: 10px; /*Has to be half of the .food-container width*/
+    height: 10px; /*Has to be half of the .food-container height*/
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* ============== Mesage box ===============*/
+
+.message-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgba(0, 0, 0, 0.9);
+    width: 35%;
+    min-height: 25%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding: 0.5rem 0;
+}
+
+.message-box h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.score {
+    font-size: 1.5rem;
+}
+
+.score i {
+    font-style: normal;
+    font-size: 1.7rem;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background-color: rgb(5, 140, 218);
+    font-size: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5%;
+}
+
+.btn:hover {
+    color: black;
+}
+
+/* ============== End of message box ===============*/
+
+@media screen and (min-width: 1900px) {
+    html {
+        font-size: 32px;
+    }
+
+    .map {
+        width: 800px;
+        height: 560px;
+    }
+
+    .snake {
+        width: 40px;
+        height: 40px;
+    }
+
+    .food-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .food {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    html {
+        font-size: 40px;
+    }
+
+    .map {
+        width: 1000px;
+        height: 700px;
+    }
+    .snake {
+        width: 50px;
+        height: 50px;
+    }
+
+    .food-container {
+        width: 50px;
+        height: 50px;
+    }
+
+    .food {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 3400px) {
+    html {
+        font-size: 64px;
+    }
+
+    .map {
+        width: 1600px;
+        height: 1120px;
+    }
+    .snake {
+        width: 80px;
+        height: 80px;
+    }
+
+    .food-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .food {
+        width: 40px;
+        height: 40px;
+    }
+}
