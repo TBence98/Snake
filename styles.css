@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+html {
+    font-size: 32px;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -15,8 +19,8 @@ body {
 
 .map {
     position: relative;
-    width: 400px; /* if you divide this number with the snake width the result has to be an even number */
-    height: 280px; /* if you divide this number with the snake height the result has to be an even number */
+    width: 800px;
+    height: 560px;
     border: 0.4rem solid #39393a;
     background-color: white;
 }
@@ -39,8 +43,8 @@ body {
 
 .snake {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-color: green;
     border-radius: 35%;
 }
@@ -50,13 +54,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .food {
-    width: 10px; /*Has to be half of the .food-container width*/
-    height: 10px; /*Has to be half of the .food-container height*/
+    width: 20px; /*Has to be half of the .food-container width*/
+    height: 20px; /*Has to be half of the .food-container height*/
     background-color: red;
     border-radius: 50%;
 }
@@ -95,8 +99,7 @@ body {
     font-size: 1.5rem;
 }
 
-.score i {
-    font-style: normal;
+.score span {
     font-size: 1.7rem;
 }
 
@@ -111,82 +114,4 @@ body {
 
 .btn:hover {
     color: black;
-}
-
-/* ============== End of message box ===============*/
-
-@media screen and (min-width: 1900px) {
-    html {
-        font-size: 32px;
-    }
-
-    .map {
-        width: 800px;
-        height: 560px;
-    }
-
-    .snake {
-        width: 40px;
-        height: 40px;
-    }
-
-    .food-container {
-        width: 40px;
-        height: 40px;
-    }
-
-    .food {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-@media screen and (min-width: 2400px) {
-    html {
-        font-size: 40px;
-    }
-
-    .map {
-        width: 1000px;
-        height: 700px;
-    }
-    .snake {
-        width: 50px;
-        height: 50px;
-    }
-
-    .food-container {
-        width: 50px;
-        height: 50px;
-    }
-
-    .food {
-        width: 25px;
-        height: 25px;
-    }
-}
-
-@media screen and (min-width: 3400px) {
-    html {
-        font-size: 64px;
-    }
-
-    .map {
-        width: 1600px;
-        height: 1120px;
-    }
-    .snake {
-        width: 80px;
-        height: 80px;
-    }
-
-    .food-container {
-        width: 80px;
-        height: 80px;
-    }
-
-    .food {
-        width: 40px;
-        height: 40px;
-    }
 }
